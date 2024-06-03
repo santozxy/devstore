@@ -21,7 +21,7 @@ export default function Header() {
         </form>
       </div>
       <div className="flex items-center gap-4">
-        <Link href="/cart" className="flex items-center gap-2 hover:underline">
+        <Link href="/" className="flex items-center gap-2 hover:underline">
           <ShoppingCart className="w-6 h-6" />
           <span className="text-sm">Cart (0)</span>
         </Link>
