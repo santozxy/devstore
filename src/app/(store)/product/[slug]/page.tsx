@@ -45,7 +45,8 @@ export default async function ProductPage({ params }: ProductProps) {
           alt={product.slug}
           width={860}
           height={860}
-          quality={100}
+          quality={90}
+          priority
         />
       </div>
       <div className="flex flex-col justify-center px-12">
