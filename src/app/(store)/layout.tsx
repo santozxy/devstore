@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import {Header} from "@/components/header";
 import { CartProvider } from "@/context/cart-context";
 
 export default function StoreLayout({
@@ -11,5 +11,6 @@ export default function StoreLayout({
         <main>{children}</main>
       </div>
     </CartProvider>
+ 
   );
 }

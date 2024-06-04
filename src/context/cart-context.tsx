@@ -37,6 +37,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     </CartContext.Provider>
   );
 }
-export const useCart = () => {
+export const useCart = () => 
   useContext(CartContext);
-};
+
