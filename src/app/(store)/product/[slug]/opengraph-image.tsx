@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { api } from "@/data/api";
 import { Product } from "@/data/types/product";
 import { env } from "@/env";
@@ -38,14 +39,18 @@ export default async function OgImage({
       // ImageResponse JSX element
       <div
         style={{
-          
-          
-          
+          height: "100%",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
+          backgroundColor: colors.zinc[950],
         }}
       >
-        <Image src={productImageURL} alt={product.slug} width={500} />
+        <img
+          src={productImageURL}
+          alt={product.slug}
+          style={{ width: "100%" }}
+        />
       </div>
     ),
     // ImageResponse options
