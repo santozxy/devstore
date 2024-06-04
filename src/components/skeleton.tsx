@@ -6,7 +6,7 @@ export function Skeleton({
 }: ComponentProps<"div">) {
   return (
     <div
-      className={twMerge("bg-zinc-50/10 animate-pulse rounded-md", className)}
+      className={twMerge("bg-zinc-50/20 animate-pulse rounded-md", className)}
       {...props}
     />
   );
