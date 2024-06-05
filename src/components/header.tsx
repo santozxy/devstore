@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Search, ShoppingCart } from "lucide-react";
 import { CardWidget } from "./cart-widget";
 import { SearchBar } from "./search-bar";
+import { Suspense } from "react";
 export function Header() {
   return (
     <header className="flex items-center justify-between">
@@ -10,7 +10,9 @@ export function Header() {
         <Link className="text-2xl font-extrabold text-white" href="/">
           devstore
         </Link>
-        <SearchBar />
+        <Suspense>
+          <SearchBar />
+        </Suspense>
       </div>
       <div className="flex items-center gap-4">
         <CardWidget />
